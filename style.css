@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.header-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/bg.jpg"),
+    linear-gradient(45deg, #212121, #3d3d3d);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.navbar {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menubar {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.menubar > li > a {
+  color: #fb9d5c;
+  text-decoration: none;
+  font-size: 18px;
+}
+.menubar > li > a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-img {
+  height: 84vh;
+}
+
+.left-banner p {
+  color: #fb9d5c;
+  font-size: 18px;
+}
+.left-banner h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.btn {
+  background: #fb9d5c;
+  padding: 10px 15px;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .banner-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .banner-img {
+    height: 40vh;
+  }
+  .left-banner h1 {
+    color: #fff;
+    font-size: 30px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .header-banner {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+/* Brand section */
+.brand-section {
+  margin: 40px 0;
+  height: auto;
+  width: 100%;
+}
+
+.brand-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.brand-img {
+  width: auto;
+  height: 150px;
+}
+
+/* Service section */
+.service-section {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.service-text {
+  text-align: center;
+}
+
+.service-card-container {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.service-card {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #a5a1a1;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.service-card h4 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.icon-text {
+  color: #fb9d5c;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+/* Hire us section */
+.hire-us-section {
+  margin-top: 50px;
+}
+
+.hire-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hire-img {
+  width: 100%;
+}
+
+.title-color-cng {
+  color: #fb9d5c;
+}
+
+.hire-title {
+  font-size: 32px;
+}
+
+.hire-paragraph {
+  color: #212529;
+  line-height: 1.5;
+  width: 90%;
+}
+
+.hire-icon {
+  color: #fb9d5c;
+  font-size: 48px;
+}
+
+.hire-contact {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hire-num {
+  font-size: 32px;
+}
+
+@media (min-width: 992px) {
+  .hire-container {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .left-hire-sec {
+    flex: 1;
+  }
+  .right-hire-sec {
+    flex: 1;
+  }
+}
+
+/* Footer */
+footer {
+  background: #151515;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.list-container div {
+  flex: 1;
+}
+
+.list-container ul {
+  list-style: none;
+}
+
+.list-container img {
+  width: 100px;
+}
+
+@media (min-width: 992px) {
+  .list-container {
+    justify-content: space-between;
+  }
+}
+
+
+/* Footer styles */
+footer {
+  background: #151515;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.list-container > div {
+  flex: 1;
+  max-width: 300px;
+}
+
+.list-container h3 {
+  color: #fb9d5c;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.list-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-container ul li {
+  margin-bottom: 10px;
+}
+
+.list-container ul li:last-child {
+  margin-bottom: 0;
+}
+
+.list-container ul li img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .list-container > div {
+    flex-basis: 100%;
+  }
+}
